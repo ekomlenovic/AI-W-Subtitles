@@ -59,7 +59,10 @@ The generated subtitle files will be saved in a folder named `subtitles`, contai
 
 
 ### Documentation website generated with MkDocs in site folder
-
+Building the documentation website.
+```bash
+mkdocs build
+```
 The documentation website is generated with MkDocs and is available in the `site` folder. To view the documentation, open the `index.html` file in your browser.
 
 ## Contributing
