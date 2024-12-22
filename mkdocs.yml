@@ -1,0 +1,45 @@
+site_name: Subtitle Generation using Whisper and Helsinki-NLP MarianMT models
+repo_url: https://github.com/ekomlenovic/AI-W-Subtitles
+repo_name: AI-W-Subtitles
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+  - scheme: default
+    primary: indigo
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - scheme: slate
+    primary: indigo
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+  language: en
+  features:
+  - navigation.tabs
+  - search.highlight
+  - search.suggest
+  - search.share
+  - content.code.copy
+  - content.code.prettify
+  - content.action.edit
+  - content.action.view
+  - content.code.annotate
+  - content.tabs.link
+  - navigation.sections
+plugins:
+- search
+- mkdocstrings:
+    handlers:
+      python:
+        options:
+          docstring_style: google
+          show_signature: true
+          show_source: false
+nav:
+- Home: README.md
+- License: LICENSE.md
+- Documentation:
+  - Subtitle Generation: code_docs/SubtitleGenerator
